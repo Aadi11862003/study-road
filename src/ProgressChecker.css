@@ -1,0 +1,68 @@
+.progress-checker-card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-top: 2.5rem; /* Space it from the grid above */
+  text-align: center;
+}
+
+.progress-checker-card h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-accent);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+
+.progress-bar-container-large {
+  width: 100%;
+  height: 12px;
+  background-color: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.progress-bar-large {
+  height: 100%;
+  background-color: var(--green-accent);
+  border-radius: 6px;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-percentage-text {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.motivational-quote {
+    font-style: italic;
+    color: var(--text-secondary);
+    margin: 0;
+}
