@@ -4,7 +4,7 @@ import axios from "axios";
 
 const QuizPage = () => {
   const [topic, setTopic] = useState("");
-  const [count, setCount] = useState();
+  const [count, setCount] = useState(5);
   const [quizList, setQuizList] = useState([]); // store all quizzes
   const [selectedQuiz, setSelectedQuiz] = useState(null); // currently opened quiz
   const [answers, setAnswers] = useState({}); // user answers
@@ -35,7 +35,7 @@ const QuizPage = () => {
       setQuizList([...quizList, newQuiz]);
       setSelectedQuiz(newQuiz); // open immediately after generating
       setTopic("");
-      setCount();
+      setCount(5);
       setAnswers({});
       setSubmitted(false);
       setScore(0);
